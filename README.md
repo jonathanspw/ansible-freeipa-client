@@ -15,7 +15,7 @@
 
 ## Description
 
-This role allows to join clients to an ipa domain
+This role allows to join clients to an ipa domain.
 
 ## Requirements
 
@@ -50,7 +50,7 @@ workflow with the next release branch called ``next``.
 Please fork this repository and create a local branch split off of the ``next``
 branch and create pull requests back to the origin ``next`` branch.
 
-## Integration testing
+## Integration Testing
 
 This role provides integration tests using Vagrant:
 
@@ -62,8 +62,6 @@ source envvars
 make test
 ```
 
-## Author information
+## Author Information
 
-Alvaro Aleman
-
-<!-- vim: set nofen ts=4 sw=4 et: -->
+This project has been forked from [Alvaro Aleman](https://github.com/alvaroaleman/ansible-freeipa-client).
