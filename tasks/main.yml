@@ -75,7 +75,6 @@
   command: >
     {{ freeipaclient_install_command }}
     {{'--hostname=' + freeipaclient_hostname  if freeipaclient_hostname is defined else ''}}
-    {{'--force-join' if freeipaclient_force_join else ''}}
     --server={{ freeipaclient_server }}
     --domain={{ freeipaclient_domain }}
     --principal={{ freeipaclient_enroll_user }}
