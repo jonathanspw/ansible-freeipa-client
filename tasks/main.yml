@@ -71,7 +71,7 @@
     - enroll
     - freeipaclient
   become: true
-  when: not freeipaclient_ipaconf.stat.exists
+  when: freeipaclient_force_join or not freeipaclient_ipaconf.stat.exists
   command: >
     {{ freeipaclient_install_command }}
     {{'--hostname=' + freeipaclient_hostname  if freeipaclient_hostname is defined else ''}}
@@ -84,7 +84,7 @@
     {{ '--enable-dns-updates' if freeipaclient_enable_dns_updates else ''}}
     --unattended
     {{ '--all-ip-addresses' if freeipaclient_all_ip_addresses else ''}}
-    {{ '--ip-address' if freeipaclient_ip_address else ''}}
+    {{ '--ip-address=' + freeipaclient_ip_address if freeipaclient_ip_address else ''}}
     {{ '--no-ntp' if not freeipaclient_enable_ntp else ''}}
     {{ '--force-join' if freeipaclient_force_join else ''}}
 
