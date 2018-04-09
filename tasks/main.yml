@@ -71,10 +71,11 @@
     - enroll
     - freeipaclient
   become: true
-  when: not freeipaclient_ipaconf.stat.exists
+  when: freeipaclient_force_join or not freeipaclient_ipaconf.stat.exists
   command: >
     {{ freeipaclient_install_command }}
     {{'--hostname=' + freeipaclient_hostname  if freeipaclient_hostname is defined else ''}}
+    {{'--force-join' if freeipaclient_force_join else ''}}
     --server={{ freeipaclient_server }}
     --domain={{ freeipaclient_domain }}
     --principal={{ freeipaclient_enroll_user }}
