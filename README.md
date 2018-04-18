@@ -5,7 +5,9 @@
 ```yaml
 - hosts: all
   vars:
-    freeipaclient_server: ipa.demo1.freeipa.org
+    freeipaclient_servers: 
+      - ipa.demo1.freeipa.org
+      - ipa.demo2.freeipa.org
     freeipaclient_domain: ipa.demo1.freeipa.org
     freeipaclient_enroll_user: admin
     freeipaclient_enroll_pass: Secret123
@@ -26,7 +28,7 @@ This role allows to join clients to an ipa domain.
 
 ## Role Variables
 
-* ``freeipaclient_server``: IP/Hostname of IPA server to use (string, mandatory)
+* ``freeipaclient_servers``: List of IP/Hostname of IPA servers to use (string, mandatory)
 * ``freeipaclient_domain``: Domain to use (string, mandatory)
 * ``freeipaclient_enroll_user``: Username to enroll host in domain (string, mandatory)
 * ``freeipaclient_enroll_pass``: Password to enroll host in domain (string, mandatory)
