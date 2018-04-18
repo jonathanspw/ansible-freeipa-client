@@ -75,7 +75,9 @@
   command: >
     {{ freeipaclient_install_command }}
     {{'--hostname=' + freeipaclient_hostname  if freeipaclient_hostname is defined else ''}}
-    --server={{ freeipaclient_server }}
+    {% for freeipa_server in freeipaclient_servers %}
+    --server={{ freeipa_server }}
+    {% endfor %}
     --domain={{ freeipaclient_domain }}
     --principal={{ freeipaclient_enroll_user }}
     --password={{ freeipaclient_enroll_pass }}

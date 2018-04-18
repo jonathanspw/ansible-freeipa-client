@@ -2,7 +2,8 @@
 - hosts: all
   vars:
     freeipaclient_force_join: true
-    freeipaclient_server: ipa.demo1.freeipa.org
+    freeipaclient_servers: 
+      - ipa.demo1.freeipa.org
     freeipaclient_domain: ipa.demo1.freeipa.org
     freeipaclient_enroll_user: admin
     freeipaclient_enroll_pass: Secret123
