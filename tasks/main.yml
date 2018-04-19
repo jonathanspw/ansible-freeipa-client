@@ -15,7 +15,7 @@
     - freeipaclient
   assert:
     that:
-      - freeipaclient_server is defined
+      - freeipaclient_servers is defined
       - freeipaclient_domain is defined
       - freeipaclient_enroll_user is defined
       - freeipaclient_enroll_pass is defined
