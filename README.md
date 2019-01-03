@@ -5,7 +5,7 @@
 ```yaml
 - hosts: all
   vars:
-    freeipaclient_servers: 
+    freeipaclient_servers:
       - ipa.demo1.freeipa.org
       - ipa.demo2.freeipa.org
     freeipaclient_domain: ipa.demo1.freeipa.org
@@ -23,6 +23,8 @@ This role allows to join clients to an ipa domain.
 
 * CentOS 7
 * Fedora 24
+* Fedora 27
+* Fedora 29
 * Ubuntu Trusty
 * Ubuntu Xenial
 
