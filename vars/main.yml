@@ -7,3 +7,4 @@ freeipaclient_supported_distributions:
   - Fedora-24
   - Fedora-27
   - Fedora-29
+  - Virtuozzo-7
