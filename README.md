@@ -22,6 +22,7 @@ This role allows to join clients to an ipa domain.
 ## Requirements
 
 * CentOS 7
+* Virtuozzo 7
 * Fedora 24
 * Fedora 27
 * Fedora 29
