@@ -1,3 +1,10 @@
+# 1.3.1
+
+Jonthan Wright (2):
+
+ * Add Virtuozzo 7 as supported distro
+ * Add support for one-time host enrollment passwords
+
 # 1.3.0
 
 Alvaro Aleman (10):
