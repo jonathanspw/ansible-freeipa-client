@@ -79,7 +79,9 @@
     --server={{ freeipa_server }}
     {% endfor %}
     --domain={{ freeipaclient_domain }}
+    {% if freeipaclient_enroll_user is defined %}
     --principal={{ freeipaclient_enroll_user }}
+    {% endif %}
     --password={{ freeipaclient_enroll_pass }}
     --ssh-trust-dns
     --mkhomedir
