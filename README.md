@@ -33,7 +33,7 @@ This role allows to join clients to an ipa domain.
 
 * ``freeipaclient_servers``: List of IP/Hostname of IPA servers to use (string, mandatory)
 * ``freeipaclient_domain``: Domain to use (string, mandatory)
-* ``freeipaclient_enroll_user``: Username to enroll host in domain (string, mandatory)
+* ``freeipaclient_enroll_user``: Username to enroll host in domain (string)
 * ``freeipaclient_enroll_pass``: Password to enroll host in domain (string, mandatory)
 * ``freeipaclient_hostname``: The hostname to use for the client (string, default: output of ``uname -n``)
 * ``freeipaclient_dns_server``: DNS server to configure. This will not do anything if variable is empty (string)
