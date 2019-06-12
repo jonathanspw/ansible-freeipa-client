@@ -17,7 +17,6 @@
     that:
       - freeipaclient_servers is defined
       - freeipaclient_domain is defined
-      - freeipaclient_enroll_user is defined
       - freeipaclient_enroll_pass is defined
 
 - name: Import variables
