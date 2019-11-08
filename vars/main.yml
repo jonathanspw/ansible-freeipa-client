@@ -6,3 +6,4 @@ freeipaclient_supported_distributions:
   - CentOS-7
   - Fedora-24
   - Fedora-27
+  - Fedora-29
