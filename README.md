@@ -29,6 +29,8 @@ This role allows to join clients to an ipa domain.
 * Fedora 30
 * Fedora 31
 * Fedora 32
+* Fedora 33
+* Fedora 34
 * Ubuntu Trusty
 * Ubuntu Xenial
 
