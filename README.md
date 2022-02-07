@@ -24,7 +24,6 @@ This role allows to join clients to an ipa domain.
 * AlmaLinux 8
 * CentOS 8
 * CentOS 7
-* Virtuozzo 7
 * Fedora 24
 * Fedora 27
 * Fedora 29
@@ -35,6 +34,7 @@ This role allows to join clients to an ipa domain.
 * Fedora 34
 * Ubuntu Trusty
 * Ubuntu Xenial
+* Virtuozzo 7
 
 ## Role Variables
 
