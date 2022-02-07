@@ -21,6 +21,7 @@ This role allows to join clients to an ipa domain.
 
 ## Requirements
 
+* AlmaLinux 8
 * CentOS 8
 * CentOS 7
 * Virtuozzo 7
